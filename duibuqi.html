@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>对不起,我错了</title>
+<style>
+	body
+	{
+		background-color:#CCC;
+		margin:0;	
+		font-family:微软雅黑;
+	}
+	.header
+	{
+		position:fixed;
+		width:100%;
+		line-height:45px;
+		background-color:#1D1B17;
+		box-shadow:0px 0px 100px #FFF;
+		text-decoration:none;
+		color:#FFF;
+		font-size:18px;
+		text-align:center;
+		z-index:10;
+		cursor:pointer;
+		background-image:-webkit-gradient(linear,0 0,0 30,from(hsla(0,0%,100%,.3)),to(hsla(0,0%,100%,0)));
+	}
+	.header:hover
+	{
+		background-color:#000;
+	}
+	.contest
+	{	
+		width:1000px;
+		margin:0 auto;
+		height:800px;
+		background-color:#FFF;
+		box-shadow:0px 0px 50px #000;
+		margin-top:20px;
+		border-radius:5px;
+	}
+	.nav
+	{
+		position:relative;
+		left:100px;
+		top:100px;
+		font-size:50px;
+		color:#960;
+	}
+	
+	.footer
+	{
+		position:fixed;
+		bottom:70px;
+		right:300px;
+		font-size:35px;
+		color:#0097FF;
+	}
+</style>
+</head>
+
+<body>
+	<div class="header" onclick="tips()">
+    哦~哦！九个太阳....请点我！！！
+    </div>
+    <br/> <br/><br />
+    <div class="contest" id="contest">
+    	<div class="nav">
+        	不要生气啦...<br /><br />
+        	对不起，我错了！<br /><br />
+            请你再原谅我一次好吗？<img src="image/wrong.gif" /><img src="image/wrong.gif" /><img src="image/wrong.gif" /><img src="image/wrong.gif" /><img src="image/wrong.gif" /><img src="image/wrong.gif" />
+        </div>
+       
+       
+        <div class="footer">
+        	from：樊毅伟 
+        </div>
+    </div>
+</body>
+<script>
+function tips()
+{
+	var box = document.getElementById("contest");
+	alert(box.style.item());
+	alert("相信我，不会再自作聪明，自以为是...了！");
+	window.location.href="tencent://message/?uin=349385910";
+}
+</script>
+</html>
